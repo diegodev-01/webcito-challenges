@@ -110,3 +110,16 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js');
   });
 }
+
+let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  deferredPrompt = event;
+  
+  document.querySelector("#install-button").style.display = "block";
+
+  document.querySelector("#install-button").addEventListener("click", () => {
+    deferredPrompt.prompt();
+  });
+});
