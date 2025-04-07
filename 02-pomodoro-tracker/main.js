@@ -104,3 +104,9 @@ secondaryButton.addEventListener("click", togglePause);
 updateSessionCount();
 timer.setAttribute("time", pomodoroState.work);
 timer.setAttribute("timecolor", colors.inactive);
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js');
+  });
+}

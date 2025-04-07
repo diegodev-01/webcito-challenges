@@ -38,7 +38,7 @@ Si quieres llevar tu implementación al siguiente nivel, intenta cumplir con est
 - [X] Añadir un historial de sesiones completadas utilizando almacenamiento local (localStorage)
 - [X] Optimizar el rendimiento para conseguir un puntaje superior a 90 en PageSpeed Insights
 - [X] Utilizar patrones avanzados de JavaScript como módulos, closures o el patrón Observer
-- [ ] Implementar un tema oscuro/claro con CSS variables y JavaScript
+- [X] Implementar un tema oscuro/claro con CSS variables y JavaScript
 - [ ] Crear tests unitarios para las funciones principales de la aplicación
 - [ ] Optimizar la aplicación para funcionar sin conexión (PWA)
 
