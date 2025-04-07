@@ -1,5 +1,5 @@
 const CACHE_NAME = 'pomodoro-cache-v1';
-const urlsToCache = ['/', '/index.html', '/styles.css', '/app.js'];
+const urlsToCache = ['/', '/index.html', '/styles.css', '/main.js'];
 
 self.addEventListener('install', event => {
   event.waitUntil(
